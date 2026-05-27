@@ -22,7 +22,7 @@ Base.metadata.create_all(bind=engine)
 
 ### 3. Run application
 
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 
 Open:
 
@@ -97,11 +97,11 @@ Requests:
 
 ## ⏱ Evaluation Flow (10 minutes)
 
-pip install -r requirements.txt
-pytest
-uvicorn app.main:app --reload
+- pip install -r requirements.txt
+- pytest
+- uvicorn main:app --reload
 
-Test via Swagger (/docs) or Postman with the 6 core requests.
+- Test via Swagger (http://127.0.0.1:8000/docs) or Postman with the 6 core requests.
 
 ---
 
