@@ -1,9 +1,12 @@
+"""Models for Users, Books, and Authors using SQLAlchemy."""
+# pylint: disable=too-few-public-methods
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 
 from database import Base
 
 
 class Users(Base):
+    """Models for Users"""
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, index=True)
@@ -18,6 +21,7 @@ class Users(Base):
 
 
 class Books(Base):
+    """Models for Books"""
     __tablename__ = 'books'
 
     id = Column(Integer, primary_key=True, index=True)
@@ -29,6 +33,7 @@ class Books(Base):
     owner_id = Column(Integer, ForeignKey('users.id'))
 
 class Authors(Base):
+    """Models for Authors"""
     __tablename__ = 'authors'
 
     id = Column(Integer, primary_key=True, index=True)
