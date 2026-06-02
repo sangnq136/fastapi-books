@@ -48,7 +48,7 @@ def test_get_author_not_found(test_author):
     assert response.json() == {"detail": "Author not found."}
 
 
-def test_create_author():
+def test_create_author(test_author):
     request_data = {
         "name": "New Author",
         "description": "New Desc",
@@ -60,7 +60,7 @@ def test_create_author():
     assert response.status_code == status.HTTP_201_CREATED
 
     db = TestingSessionLocal()
-    author = db.query(Authors).filter(Authors.name == "New Author").first()
+    author = db.query(Authors).filter(Authors.id == 2).first()
 
     assert author is not None
     assert author.name == request_data["name"]

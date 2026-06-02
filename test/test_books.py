@@ -57,6 +57,44 @@ def test_read_one_authenticated_not_found(test_books):
     assert response.json() == {'detail': 'Book not found.'}
 
 
+@pytest.mark.parametrize("rating, expected_status", [
+    (0, 422),   # below min
+    (1, 201),   # min valid
+    (5, 201),   # max valid
+    (6, 422),   # above max
+])
+def test_create_book_rating_bva(test_books, rating, expected_status):
+    request_data = {
+        "title": "BVA Rating",
+        "description": "Desc",
+        "author_id": 1,
+        "rating": rating,
+        "published_year": 2022
+    }
+
+    response = client.post("/books", json=request_data)
+
+    assert response.status_code == expected_status
+
+@pytest.mark.parametrize("year, expected_status", [
+    (1999, 422),   # below min
+    (2000, 201),   # min valid
+    (2029, 201),   # max valid
+    (2030, 422),   # above max
+])
+def test_create_book_year_bva(test_books, year, expected_status):
+    request_data = {
+        "title": "BVA Year",
+        "description": "Desc",
+        "author_id": 1,
+        "rating": 5,
+        "published_year": year
+    }
+
+    response = client.post("/books", json=request_data)
+
+    assert response.status_code == expected_status
+
 def test_create_book(test_books):
     request_data = {
         'title': 'New Book',
@@ -81,6 +119,19 @@ def test_create_book(test_books):
 
     assert model.owner_id == 1
 
+def test_create_book_author_id_not_found(test_books):
+    request_data = {
+        "title": "Test",
+        "description": "Desc",
+        "author_id": 999,
+        "rating": 5,
+        "published_year": 2022
+    }
+
+    response = client.post("/books", json=request_data)
+
+    assert response.status_code == 404
+    assert response.json()["detail"] == "Author not found"
 
 def test_create_book_missing_author(test_books):
     request_data = {
@@ -94,6 +145,19 @@ def test_create_book_missing_author(test_books):
 
     assert response.status_code == status.HTTP_422_UNPROCESSABLE_CONTENT
 
+def test_create_book_author_id_not_found(test_books):
+    request_data = {
+        "title": "Test",
+        "description": "Desc",
+        "author_id": 999,
+        "rating": 5,
+        "published_year": 2022
+    }
+
+    response = client.post("/books", json=request_data)
+
+    assert response.status_code == 404
+    assert response.json()["detail"] == "Author not found"
 
 def test_create_book_author_name_missing_born_year(test_books):
     request_data = {
