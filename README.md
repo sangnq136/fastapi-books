@@ -65,11 +65,25 @@ Create `.env` file:
 
 ### Books
 
-- GET /books → List books (pagination)
-- GET /books/{id} → Book detail
+- GET /books → List books (pagination) by owner created
+- GET /books/{book_id} → Book detail by owner created
 - POST /books → Create book
-- PUT /books/{id} → Update book
-- DELETE /books/{id} → Delete book
+- PUT /books/{book_id} → Update book by owner created
+- DELETE /books/{book_id} → Delete book by owner created
+
+### Authors
+
+- GET /authors → List authors  (pagination)
+- GET /authors/{author_id} → Author detail
+- POST /authors → Create author
+- PUT /authors/{author_id} → Update author
+- DELETE /authors/{author_id} → Delete author
+
+
+### Admins
+
+- GET /books → List books (pagination) by admin 
+- DELETE /books/{book_id} → Delete book by admin 
 
 ---
 
@@ -95,7 +109,7 @@ Requests:
 
 ---
 
-## ⏱ Evaluation Flow (10 minutes)
+## ⏱ Evaluation Flow
 
 - pip install -r requirements.txt
 - pytest

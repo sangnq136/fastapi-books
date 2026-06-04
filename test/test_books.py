@@ -2,6 +2,8 @@ from starlette import status
 
 from routers.books import get_db, get_current_user
 from utils import *
+from core import config
+from jose import jwt
 
 app.dependency_overrides[get_db] = override_get_db
 app.dependency_overrides[get_current_user] = override_get_current_user
@@ -179,7 +181,7 @@ def test_create_book_author_name_missing_born_year(test_books):
     assert response.status_code == status.HTTP_422_UNPROCESSABLE_CONTENT
 
 
-def test_create_book_unauthorized():
+def test_create_book_unauthorized_none():
     # override user = None
     app.dependency_overrides[get_current_user] = lambda: None
 
@@ -195,6 +197,32 @@ def test_create_book_unauthorized():
 
     assert response.status_code == status.HTTP_401_UNAUTHORIZED
     assert response.json() == {'detail': 'Access Denied'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
+
+
+def test_create_book_invalid_token():
+    # override user = None
+    app.dependency_overrides.pop(get_current_user, None)
+
+    request_data = {
+        "title": "Unauthorized",
+        "description": "Desc",
+        "author_id": 1,
+        "rating": 5,
+        "published_year": 2022
+    }
+    bad_token = jwt.encode(
+        {"invalid": "data"},
+        config.settings.SECRET_KEY,
+        algorithm=config.settings.ALGORITHM
+    )
+
+    response = client.post("/books", json=request_data, headers={"Authorization": f"Bearer {bad_token}"})
+
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Could not validate user'}
 
     # restore override
     app.dependency_overrides[get_current_user] = override_get_current_user
@@ -244,7 +272,7 @@ def test_update_book(test_books):
     assert model.published_year == request_data['published_year']
 
 
-def test_update_book_unauthorized():
+def test_update_book_unauthorized_none():
     # override user = None
     app.dependency_overrides[get_current_user] = lambda: None
 
@@ -260,6 +288,52 @@ def test_update_book_unauthorized():
 
     assert response.status_code == status.HTTP_401_UNAUTHORIZED
     assert response.json() == {'detail': 'Access Denied'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
+
+
+def test_update_book_not_owner():
+    # override user = None
+    app.dependency_overrides[get_current_user] = override_get_current_normal_user
+
+    request_data = {
+        'title': 'Updated Book Title',
+        'description': 'Updated Description',
+        'author_id': 1,
+        'rating': 4,
+        'published_year': 2025
+    }
+
+    response = client.put('/books/1', json=request_data)
+
+    assert response.status_code == status.HTTP_404_NOT_FOUND
+    assert response.json() == {'detail': 'Book not found.'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
+
+
+def test_edit_book_invalid_token(test_books):
+    app.dependency_overrides.pop(get_current_user, None)
+
+    request_data = {
+        'title': 'Updated Book Title',
+        'description': 'Updated Description',
+        'author_id': 1,
+        'rating': 4,
+        'published_year': 2025
+    }
+    bad_token = jwt.encode(
+        {"invalid": "data"},
+        config.settings.SECRET_KEY,
+        algorithm=config.settings.ALGORITHM
+    )
+
+    response = client.put('/books/1', json=request_data, headers={"Authorization": f"Bearer {bad_token}"})
+
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Could not validate user'}
 
     # restore override
     app.dependency_overrides[get_current_user] = override_get_current_user
@@ -295,7 +369,7 @@ def test_update_book_not_found(test_books):
     assert response.json() == {'detail': 'Book not found.'}
 
 
-def test_delete_book_unauthorized():
+def test_delete_book_unauthorized_none():
     # override user = None
     app.dependency_overrides[get_current_user] = lambda: None
 
@@ -303,6 +377,27 @@ def test_delete_book_unauthorized():
 
     assert response.status_code == status.HTTP_401_UNAUTHORIZED
     assert response.json() == {'detail': 'Access Denied'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
+
+
+def test_delete_book_invalid_token(test_books):
+    app.dependency_overrides.pop(get_current_user, None)
+
+    bad_token = jwt.encode(
+        {"invalid": "data"},
+        config.settings.SECRET_KEY,
+        algorithm=config.settings.ALGORITHM
+    )
+
+    response = client.delete(
+        "/books/1",
+        headers={"Authorization": f"Bearer {bad_token}"}
+    )
+
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Could not validate user'}
 
     # restore override
     app.dependency_overrides[get_current_user] = override_get_current_user

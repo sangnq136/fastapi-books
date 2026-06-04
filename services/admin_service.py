@@ -7,7 +7,7 @@ def _check_admin(user):
     if not user or user.get("user_role") != "admin":
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Authentication Failed"
+            detail="Access Denied"
         )
 
 

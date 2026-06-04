@@ -2,6 +2,8 @@ from starlette import status
 from utils import *
 from routers.authors import get_db, get_current_user
 from models import Authors
+from jose import jwt
+from core import config
 
 # ✅ override dependency
 app.dependency_overrides[get_db] = override_get_db
@@ -86,6 +88,29 @@ def test_create_author_unauthorized():
     app.dependency_overrides[get_current_user] = override_get_current_user
 
 
+def test_create_author_invalid_token():
+    app.dependency_overrides.pop(get_current_user, None)
+
+    request_data = {
+        "name": "New Author",
+        "description": "New Desc",
+        "born_year": 2000
+    }
+    bad_token = jwt.encode(
+        {"invalid": "data"},
+        config.settings.SECRET_KEY,
+        algorithm=config.settings.ALGORITHM
+    )
+
+    response = client.post("/authors", json=request_data, headers={"Authorization": f"Bearer {bad_token}"})
+
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Could not validate user'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
+
+
 def test_update_author_unauthorized(test_author):
     # override user = None
     app.dependency_overrides[get_current_user] = lambda: None
@@ -100,6 +125,31 @@ def test_update_author_unauthorized(test_author):
 
     assert response.status_code == status.HTTP_401_UNAUTHORIZED
     assert response.json() == {'detail': 'Access Denied'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
+
+
+def test_update_author_invalid_token(test_author):
+    app.dependency_overrides.pop(get_current_user, None)
+
+    request_data = {
+        "name": "Updated Author",
+        "description": "Updated Desc",
+        "born_year": 2001
+    }
+
+    bad_token = jwt.encode(
+        {"invalid": "data"},
+        config.settings.SECRET_KEY,
+        algorithm=config.settings.ALGORITHM
+    )
+
+    response = client.put(f"/authors/{test_author.id}", json=request_data,
+                          headers={"Authorization": f"Bearer {bad_token}"})
+
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Could not validate user'}
 
     # restore override
     app.dependency_overrides[get_current_user] = override_get_current_user
@@ -151,6 +201,25 @@ def test_delete_author_unauthorized(test_author):
 
     # restore override
     app.dependency_overrides[get_current_user] = override_get_current_user
+
+
+def test_delete_author_invalid_token(test_author):
+    app.dependency_overrides.pop(get_current_user, None)
+
+    bad_token = jwt.encode(
+        {"invalid": "data"},
+        config.settings.SECRET_KEY,
+        algorithm=config.settings.ALGORITHM
+    )
+
+    response = client.delete(f"/authors/{test_author.id}", headers={"Authorization": f"Bearer {bad_token}"})
+
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Could not validate user'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
+
 
 def test_delete_author(test_author):
     response = client.delete(f"/authors/{test_author.id}")
