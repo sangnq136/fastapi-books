@@ -26,7 +26,7 @@ def get_current_active_user(
         user: Annotated[dict, Depends(get_current_user)]
 ):
     if not user:
-        raise HTTPException(401, "Authentication Failed")
+        raise HTTPException(401, "Access Denied")
     return user
 
 

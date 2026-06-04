@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends
 from fastapi.params import Query
 
 from database import SessionLocal
-from schemas.user_schema import ChangePasswordRequest, ChangePhoneRequest
+from schemas.user_schema import ChangePasswordRequest
 from services.user_service import *
 from .auth import get_current_user
 

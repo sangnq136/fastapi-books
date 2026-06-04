@@ -58,10 +58,10 @@ def test_read_one_authenticated_not_found(test_books):
 
 
 @pytest.mark.parametrize("rating, expected_status", [
-    (0, 422),   # below min
-    (1, 201),   # min valid
-    (5, 201),   # max valid
-    (6, 422),   # above max
+    (0, 422),  # below min
+    (1, 201),  # min valid
+    (5, 201),  # max valid
+    (6, 422),  # above max
 ])
 def test_create_book_rating_bva(test_books, rating, expected_status):
     request_data = {
@@ -76,11 +76,12 @@ def test_create_book_rating_bva(test_books, rating, expected_status):
 
     assert response.status_code == expected_status
 
+
 @pytest.mark.parametrize("year, expected_status", [
-    (1999, 422),   # below min
-    (2000, 201),   # min valid
-    (2029, 201),   # max valid
-    (2030, 422),   # above max
+    (1999, 422),  # below min
+    (2000, 201),  # min valid
+    (2029, 201),  # max valid
+    (2030, 422),  # above max
 ])
 def test_create_book_year_bva(test_books, year, expected_status):
     request_data = {
@@ -94,6 +95,7 @@ def test_create_book_year_bva(test_books, year, expected_status):
     response = client.post("/books", json=request_data)
 
     assert response.status_code == expected_status
+
 
 def test_create_book(test_books):
     request_data = {
@@ -119,6 +121,7 @@ def test_create_book(test_books):
 
     assert model.owner_id == 1
 
+
 def test_create_book_author_id_not_found(test_books):
     request_data = {
         "title": "Test",
@@ -132,6 +135,7 @@ def test_create_book_author_id_not_found(test_books):
 
     assert response.status_code == 404
     assert response.json()["detail"] == "Author not found"
+
 
 def test_create_book_missing_author(test_books):
     request_data = {
@@ -145,6 +149,7 @@ def test_create_book_missing_author(test_books):
 
     assert response.status_code == status.HTTP_422_UNPROCESSABLE_CONTENT
 
+
 def test_create_book_author_id_not_found(test_books):
     request_data = {
         "title": "Test",
@@ -158,6 +163,7 @@ def test_create_book_author_id_not_found(test_books):
 
     assert response.status_code == 404
     assert response.json()["detail"] == "Author not found"
+
 
 def test_create_book_author_name_missing_born_year(test_books):
     request_data = {
@@ -188,9 +194,25 @@ def test_create_book_unauthorized():
     response = client.post("/books", json=request_data)
 
     assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Access Denied'}
 
     # restore override
     app.dependency_overrides[get_current_user] = override_get_current_user
+
+
+def test_create_book_with_both_author_fields(test_books):
+    request_data = {
+        "title": "Conflict Author",
+        "description": "Desc",
+        "author_id": 1,
+        "author_name": "Conflict",
+        "rating": 5,
+        "published_year": 2022
+    }
+
+    response = client.post("/books", json=request_data)
+
+    assert response.status_code == status.HTTP_422_UNPROCESSABLE_CONTENT
 
 
 def test_update_book(test_books):
@@ -222,19 +244,41 @@ def test_update_book(test_books):
     assert model.published_year == request_data['published_year']
 
 
-def test_create_book_with_both_author_fields(test_books):
+def test_update_book_unauthorized():
+    # override user = None
+    app.dependency_overrides[get_current_user] = lambda: None
+
     request_data = {
-        "title": "Conflict Author",
-        "description": "Desc",
-        "author_id": 1,
-        "author_name": "Conflict",
-        "rating": 5,
-        "published_year": 2022
+        'title': 'Updated Book Title',
+        'description': 'Updated Description',
+        'author_id': 1,
+        'rating': 4,
+        'published_year': 2025
     }
 
-    response = client.post("/books", json=request_data)
+    response = client.put('/books/1', json=request_data)
 
-    assert response.status_code == status.HTTP_422_UNPROCESSABLE_CONTENT
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Access Denied'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
+
+
+def test_update_book_not_found_id(test_books):
+    request_data = {
+        'title': 'Updated Book Title',
+        'description': 'Updated Description',
+        'author_id': 999,
+        'rating': 4,
+        'published_year': 2025
+    }
+
+    response = client.put('/books/999', json=request_data)
+
+    assert response.status_code == status.HTTP_404_NOT_FOUND
+
+    assert response.json() == {'detail': 'Book not found.'}
 
 
 def test_update_book_not_found(test_books):
@@ -249,6 +293,19 @@ def test_update_book_not_found(test_books):
     response = client.put('/books/999', json=request_data)
     assert response.status_code == status.HTTP_404_NOT_FOUND
     assert response.json() == {'detail': 'Book not found.'}
+
+
+def test_delete_book_unauthorized():
+    # override user = None
+    app.dependency_overrides[get_current_user] = lambda: None
+
+    response = client.delete('/books/1')
+
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Access Denied'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
 
 
 def test_delete_book(test_books):

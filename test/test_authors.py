@@ -1,7 +1,6 @@
 from starlette import status
 from utils import *
-from routers.authors import get_db
-from routers.auth import get_current_user
+from routers.authors import get_db, get_current_user
 from models import Authors
 
 # ✅ override dependency
@@ -68,6 +67,44 @@ def test_create_author(test_author):
     assert author.born_year == request_data["born_year"]
 
 
+def test_create_author_unauthorized():
+    # override user = None
+    app.dependency_overrides[get_current_user] = lambda: None
+
+    request_data = {
+        "name": "New Author",
+        "description": "New Desc",
+        "born_year": 2000
+    }
+
+    response = client.post("/authors", json=request_data)
+
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Access Denied'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
+
+
+def test_update_author_unauthorized(test_author):
+    # override user = None
+    app.dependency_overrides[get_current_user] = lambda: None
+
+    request_data = {
+        "name": "Updated Author",
+        "description": "Updated Desc",
+        "born_year": 2001
+    }
+
+    response = client.put(f"/authors/{test_author.id}", json=request_data)
+
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Access Denied'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
+
+
 def test_update_author(test_author):
     request_data = {
         "name": "Updated Author",
@@ -102,6 +139,18 @@ def test_update_author_not_found():
     assert response.status_code == status.HTTP_404_NOT_FOUND
     assert response.json() == {"detail": "Author not found."}
 
+
+def test_delete_author_unauthorized(test_author):
+    # override user = None
+    app.dependency_overrides[get_current_user] = lambda: None
+
+    response = client.delete(f"/authors/{test_author.id}")
+
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
+    assert response.json() == {'detail': 'Access Denied'}
+
+    # restore override
+    app.dependency_overrides[get_current_user] = override_get_current_user
 
 def test_delete_author(test_author):
     response = client.delete(f"/authors/{test_author.id}")
