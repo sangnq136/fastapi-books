@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.py$\")",
+      "Bash(python3 -c \"import sys; sys.path.insert\\(0, '.'\\); from routers.books import *\")",
+      "Bash(python *)",
+      "Bash(grep -E \"\\\\.\\(md|txt\\)$\")"
+    ]
+  }
+}

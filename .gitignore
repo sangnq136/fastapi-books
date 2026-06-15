@@ -2,3 +2,4 @@ fastapienv/
 __pycache__/
 .idea/
 testdb.db
+docs/

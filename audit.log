@@ -1,0 +1,898 @@
+2026-06-15 13:41:47,960 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:41:47,972 - audit - INFO - RESPONSE: GET /admin/books - Status: 200
+2026-06-15 13:41:48,049 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:41:48,052 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 13:41:48,201 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:41:48,206 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 13:41:48,290 - audit - INFO - REQUEST: DELETE /admin/books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:48,310 - audit - INFO - RESPONSE: DELETE /admin/books/1 - Status: 200
+2026-06-15 13:41:48,347 - audit - INFO - REQUEST: DELETE /admin/books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:41:48,351 - audit - INFO - RESPONSE: DELETE /admin/books/999 - Status: 404
+2026-06-15 13:41:49,361 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:41:49,371 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:41:49,407 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:41:49,410 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:41:49,447 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:41:49,461 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:41:49,503 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:41:49,506 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:41:49,547 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:41:49,550 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:41:49,600 - audit - INFO - REQUEST: GET /authors - Client: testclient - User: Anonymous
+2026-06-15 13:41:49,617 - audit - INFO - RESPONSE: GET /authors - Status: 200
+2026-06-15 13:41:49,665 - audit - INFO - REQUEST: GET /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:49,670 - audit - INFO - RESPONSE: GET /authors/1 - Status: 200
+2026-06-15 13:41:49,815 - audit - INFO - REQUEST: GET /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:41:49,819 - audit - INFO - RESPONSE: GET /authors/999 - Status: 404
+2026-06-15 13:41:49,872 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:41:49,888 - audit - INFO - RESPONSE: POST /authors - Status: 201
+2026-06-15 13:41:49,934 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:41:49,937 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 13:41:49,983 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:41:49,984 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 13:41:50,037 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,042 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 13:41:50,095 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,098 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 13:41:50,309 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,331 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 200
+2026-06-15 13:41:50,378 - audit - INFO - REQUEST: PUT /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,383 - audit - INFO - RESPONSE: PUT /authors/999 - Status: 404
+2026-06-15 13:41:50,432 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,435 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 13:41:50,486 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,488 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 13:41:50,542 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,564 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 200
+2026-06-15 13:41:50,605 - audit - INFO - REQUEST: DELETE /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,611 - audit - INFO - RESPONSE: DELETE /authors/999 - Status: 404
+2026-06-15 13:41:50,694 - audit - INFO - REQUEST: GET /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,707 - audit - INFO - RESPONSE: GET /books - Status: 200
+2026-06-15 13:41:50,781 - audit - INFO - REQUEST: GET /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,788 - audit - INFO - RESPONSE: GET /books/1 - Status: 200
+2026-06-15 13:41:50,874 - audit - INFO - REQUEST: GET /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,878 - audit - INFO - RESPONSE: GET /books/999 - Status: 404
+2026-06-15 13:41:50,968 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:50,974 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:41:51,046 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,066 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:41:51,135 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,157 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:41:51,221 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,225 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:41:51,291 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,295 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:41:51,370 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,392 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:41:51,452 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,473 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:41:51,538 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,542 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:41:51,606 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,636 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:41:51,700 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,704 - audit - INFO - RESPONSE: POST /books - Status: 404
+2026-06-15 13:41:51,777 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,781 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:41:51,849 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,852 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:41:51,889 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,892 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 13:41:51,932 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:51,934 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 13:41:52,008 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:41:52,012 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:41:52,097 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:52,117 - audit - INFO - RESPONSE: PUT /books/1 - Status: 200
+2026-06-15 13:41:52,160 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:52,163 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 13:41:52,196 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:52,201 - audit - INFO - RESPONSE: PUT /books/1 - Status: 404
+2026-06-15 13:41:52,278 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:52,280 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 13:41:52,347 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:41:52,353 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 13:41:52,436 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:41:52,442 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 13:41:52,483 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:52,486 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 13:41:52,557 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:52,559 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 13:41:52,619 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:41:52,636 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 200
+2026-06-15 13:41:52,696 - audit - INFO - REQUEST: DELETE /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:41:52,701 - audit - INFO - RESPONSE: DELETE /books/999 - Status: 404
+2026-06-15 13:41:53,019 - audit - INFO - REQUEST: GET /user/detail - Client: testclient - User: Anonymous
+2026-06-15 13:41:53,028 - audit - INFO - RESPONSE: GET /user/detail - Status: 200
+2026-06-15 13:41:53,357 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 13:41:53,889 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 200
+2026-06-15 13:41:54,209 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 13:41:54,468 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 401
+2026-06-15 13:41:54,781 - audit - INFO - REQUEST: PUT /user/change_phone - Client: testclient - User: Anonymous
+2026-06-15 13:41:54,805 - audit - INFO - RESPONSE: PUT /user/change_phone - Status: 200
+2026-06-15 13:45:34,731 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:45:34,740 - audit - INFO - RESPONSE: GET /admin/books - Status: 200
+2026-06-15 13:45:34,866 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:45:34,869 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 13:45:34,952 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:45:34,954 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 13:45:35,053 - audit - INFO - REQUEST: DELETE /admin/books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:35,081 - audit - INFO - RESPONSE: DELETE /admin/books/1 - Status: 200
+2026-06-15 13:45:35,124 - audit - INFO - REQUEST: DELETE /admin/books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:45:35,128 - audit - INFO - RESPONSE: DELETE /admin/books/999 - Status: 404
+2026-06-15 13:45:36,136 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,141 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:45:36,181 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,184 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:45:36,229 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,237 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:45:36,274 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,277 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:45:36,323 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,326 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:45:36,388 - audit - INFO - REQUEST: GET /authors - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,398 - audit - INFO - RESPONSE: GET /authors - Status: 200
+2026-06-15 13:45:36,462 - audit - INFO - REQUEST: GET /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,468 - audit - INFO - RESPONSE: GET /authors/1 - Status: 200
+2026-06-15 13:45:36,530 - audit - INFO - REQUEST: GET /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,534 - audit - INFO - RESPONSE: GET /authors/999 - Status: 404
+2026-06-15 13:45:36,586 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,603 - audit - INFO - RESPONSE: POST /authors - Status: 201
+2026-06-15 13:45:36,639 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,643 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 13:45:36,690 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,692 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 13:45:36,742 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,746 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 13:45:36,821 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,822 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 13:45:36,875 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,903 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 200
+2026-06-15 13:45:36,944 - audit - INFO - REQUEST: PUT /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:45:36,950 - audit - INFO - RESPONSE: PUT /authors/999 - Status: 404
+2026-06-15 13:45:37,091 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:37,095 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 13:45:37,155 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:37,157 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 13:45:37,287 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:37,417 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 200
+2026-06-15 13:45:37,488 - audit - INFO - REQUEST: DELETE /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:45:37,493 - audit - INFO - RESPONSE: DELETE /authors/999 - Status: 404
+2026-06-15 13:45:37,565 - audit - INFO - REQUEST: GET /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:37,574 - audit - INFO - RESPONSE: GET /books - Status: 200
+2026-06-15 13:45:37,883 - audit - INFO - REQUEST: GET /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:37,892 - audit - INFO - RESPONSE: GET /books/1 - Status: 200
+2026-06-15 13:45:37,984 - audit - INFO - REQUEST: GET /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:45:37,991 - audit - INFO - RESPONSE: GET /books/999 - Status: 404
+2026-06-15 13:45:38,076 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:38,083 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:45:38,175 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:38,202 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:45:38,292 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:38,321 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:45:38,397 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:38,403 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:45:38,477 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:38,481 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:45:38,568 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:38,588 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:45:38,673 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:38,698 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:45:38,769 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:38,774 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:45:38,845 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:38,871 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:45:38,948 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:38,955 - audit - INFO - RESPONSE: POST /books - Status: 404
+2026-06-15 13:45:39,028 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,032 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:45:39,105 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,110 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:45:39,148 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,152 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 13:45:39,195 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,197 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 13:45:39,261 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,265 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:45:39,340 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,364 - audit - INFO - RESPONSE: PUT /books/1 - Status: 200
+2026-06-15 13:45:39,407 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,410 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 13:45:39,451 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,456 - audit - INFO - RESPONSE: PUT /books/1 - Status: 404
+2026-06-15 13:45:39,527 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,529 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 13:45:39,599 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,605 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 13:45:39,686 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,693 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 13:45:39,734 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,737 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 13:45:39,824 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,826 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 13:45:39,904 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:45:39,925 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 200
+2026-06-15 13:45:39,995 - audit - INFO - REQUEST: DELETE /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:45:40,001 - audit - INFO - RESPONSE: DELETE /books/999 - Status: 404
+2026-06-15 13:45:40,317 - audit - INFO - REQUEST: GET /user/detail - Client: testclient - User: Anonymous
+2026-06-15 13:45:40,323 - audit - INFO - RESPONSE: GET /user/detail - Status: 200
+2026-06-15 13:45:40,640 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 13:45:41,197 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 200
+2026-06-15 13:45:41,539 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 13:45:41,805 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 401
+2026-06-15 13:45:42,126 - audit - INFO - REQUEST: PUT /user/change_phone - Client: testclient - User: Anonymous
+2026-06-15 13:45:42,150 - audit - INFO - RESPONSE: PUT /user/change_phone - Status: 200
+2026-06-15 13:50:38,123 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:50:38,133 - audit - INFO - RESPONSE: GET /admin/books - Status: 200
+2026-06-15 13:50:38,208 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:50:38,211 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 13:50:38,298 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:50:38,299 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 13:50:38,385 - audit - INFO - REQUEST: DELETE /admin/books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:38,406 - audit - INFO - RESPONSE: DELETE /admin/books/1 - Status: 200
+2026-06-15 13:50:38,454 - audit - INFO - REQUEST: DELETE /admin/books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:50:38,459 - audit - INFO - RESPONSE: DELETE /admin/books/999 - Status: 404
+2026-06-15 13:50:39,433 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:50:39,437 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:50:39,472 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:50:39,474 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:50:39,517 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:50:39,525 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:50:39,580 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:50:39,584 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:50:39,617 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:50:39,621 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:50:39,670 - audit - INFO - REQUEST: GET /authors - Client: testclient - User: Anonymous
+2026-06-15 13:50:39,679 - audit - INFO - RESPONSE: GET /authors - Status: 200
+2026-06-15 13:50:39,734 - audit - INFO - REQUEST: GET /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:39,740 - audit - INFO - RESPONSE: GET /authors/1 - Status: 200
+2026-06-15 13:50:39,793 - audit - INFO - REQUEST: GET /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:50:39,798 - audit - INFO - RESPONSE: GET /authors/999 - Status: 404
+2026-06-15 13:50:39,861 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:50:39,891 - audit - INFO - RESPONSE: POST /authors - Status: 201
+2026-06-15 13:50:39,936 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:50:39,939 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 13:50:39,973 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:50:39,976 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 13:50:40,027 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,031 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 13:50:40,089 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,091 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 13:50:40,160 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,178 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 200
+2026-06-15 13:50:40,217 - audit - INFO - REQUEST: PUT /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,221 - audit - INFO - RESPONSE: PUT /authors/999 - Status: 404
+2026-06-15 13:50:40,268 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,272 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 13:50:40,323 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,325 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 13:50:40,377 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,395 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 200
+2026-06-15 13:50:40,443 - audit - INFO - REQUEST: DELETE /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,449 - audit - INFO - RESPONSE: DELETE /authors/999 - Status: 404
+2026-06-15 13:50:40,516 - audit - INFO - REQUEST: GET /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,528 - audit - INFO - RESPONSE: GET /books - Status: 200
+2026-06-15 13:50:40,609 - audit - INFO - REQUEST: GET /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,618 - audit - INFO - RESPONSE: GET /books/1 - Status: 200
+2026-06-15 13:50:40,680 - audit - INFO - REQUEST: GET /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,688 - audit - INFO - RESPONSE: GET /books/999 - Status: 404
+2026-06-15 13:50:40,768 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,775 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:50:40,851 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,877 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:50:40,944 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:40,966 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:50:41,032 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,035 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:50:41,106 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,111 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:50:41,190 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,221 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:50:41,290 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,319 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:50:41,391 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,396 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:50:41,466 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,492 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:50:41,566 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,571 - audit - INFO - RESPONSE: POST /books - Status: 404
+2026-06-15 13:50:41,633 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,638 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:50:41,707 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,711 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:50:41,745 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,749 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 13:50:41,788 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,790 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 13:50:41,854 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,858 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:50:41,924 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,945 - audit - INFO - RESPONSE: PUT /books/1 - Status: 200
+2026-06-15 13:50:41,994 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:41,997 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 13:50:42,035 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:42,040 - audit - INFO - RESPONSE: PUT /books/1 - Status: 404
+2026-06-15 13:50:42,127 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:42,129 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 13:50:42,201 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:50:42,205 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 13:50:42,281 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:50:42,287 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 13:50:42,323 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:42,327 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 13:50:42,392 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:42,394 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 13:50:42,471 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:50:42,487 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 200
+2026-06-15 13:50:42,564 - audit - INFO - REQUEST: DELETE /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:50:42,570 - audit - INFO - RESPONSE: DELETE /books/999 - Status: 404
+2026-06-15 13:50:42,890 - audit - INFO - REQUEST: GET /user/detail - Client: testclient - User: Anonymous
+2026-06-15 13:50:42,899 - audit - INFO - RESPONSE: GET /user/detail - Status: 200
+2026-06-15 13:50:43,215 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 13:50:43,747 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 200
+2026-06-15 13:50:44,074 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 13:50:44,335 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 401
+2026-06-15 13:50:44,678 - audit - INFO - REQUEST: PUT /user/change_phone - Client: testclient - User: Anonymous
+2026-06-15 13:50:44,695 - audit - INFO - RESPONSE: PUT /user/change_phone - Status: 200
+2026-06-15 13:53:29,726 - audit - INFO - REQUEST: GET / - Client: 127.0.0.1 - User: Anonymous
+2026-06-15 13:53:29,726 - audit - INFO - RESPONSE: GET / - Status: 404
+2026-06-15 13:53:30,162 - audit - INFO - REQUEST: GET /favicon.ico - Client: 127.0.0.1 - User: Anonymous
+2026-06-15 13:53:30,163 - audit - INFO - RESPONSE: GET /favicon.ico - Status: 404
+2026-06-15 13:53:33,180 - audit - INFO - REQUEST: GET /dóc - Client: 127.0.0.1 - User: Anonymous
+2026-06-15 13:53:33,181 - audit - INFO - RESPONSE: GET /dóc - Status: 404
+2026-06-15 13:53:38,782 - audit - INFO - REQUEST: GET /docs - Client: 127.0.0.1 - User: Anonymous
+2026-06-15 13:53:38,783 - audit - INFO - RESPONSE: GET /docs - Status: 200
+2026-06-15 13:53:39,180 - audit - INFO - REQUEST: GET /openapi.json - Client: 127.0.0.1 - User: Anonymous
+2026-06-15 13:53:39,250 - audit - INFO - RESPONSE: GET /openapi.json - Status: 200
+2026-06-15 13:53:51,434 - audit - INFO - REQUEST: GET /user/ - Client: 127.0.0.1 - User: Anonymous
+2026-06-15 13:53:51,441 - audit - INFO - RESPONSE: GET /user/ - Status: 401
+2026-06-15 13:54:02,144 - audit - INFO - REQUEST: POST /auth/token - Client: 127.0.0.1 - User: Anonymous
+2026-06-15 13:54:02,447 - audit - INFO - RESPONSE: POST /auth/token - Status: 200
+2026-06-15 13:54:05,323 - audit - INFO - REQUEST: GET /user/ - Client: 127.0.0.1 - User: Anonymous
+2026-06-15 13:54:05,327 - audit - INFO - RESPONSE: GET /user/ - Status: 200
+2026-06-15 13:56:58,282 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:56:58,291 - audit - INFO - RESPONSE: GET /admin/books - Status: 200
+2026-06-15 13:56:58,359 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:56:58,361 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 13:56:58,438 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 13:56:58,439 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 13:56:58,515 - audit - INFO - REQUEST: DELETE /admin/books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:56:58,533 - audit - INFO - RESPONSE: DELETE /admin/books/1 - Status: 200
+2026-06-15 13:56:58,584 - audit - INFO - REQUEST: DELETE /admin/books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:56:58,589 - audit - INFO - RESPONSE: DELETE /admin/books/999 - Status: 404
+2026-06-15 13:56:59,642 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:56:59,647 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:56:59,684 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:56:59,686 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:56:59,724 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:56:59,732 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:56:59,777 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:56:59,781 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:56:59,832 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 13:56:59,836 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 13:56:59,892 - audit - INFO - REQUEST: GET /authors - Client: testclient - User: Anonymous
+2026-06-15 13:56:59,902 - audit - INFO - RESPONSE: GET /authors - Status: 200
+2026-06-15 13:56:59,955 - audit - INFO - REQUEST: GET /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:56:59,962 - audit - INFO - RESPONSE: GET /authors/1 - Status: 200
+2026-06-15 13:57:00,022 - audit - INFO - REQUEST: GET /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,027 - audit - INFO - RESPONSE: GET /authors/999 - Status: 404
+2026-06-15 13:57:00,089 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,124 - audit - INFO - RESPONSE: POST /authors - Status: 201
+2026-06-15 13:57:00,166 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,170 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 13:57:00,223 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,225 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 13:57:00,285 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,289 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 13:57:00,347 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,350 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 13:57:00,402 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,426 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 200
+2026-06-15 13:57:00,470 - audit - INFO - REQUEST: PUT /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,475 - audit - INFO - RESPONSE: PUT /authors/999 - Status: 404
+2026-06-15 13:57:00,532 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,535 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 13:57:00,583 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,584 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 13:57:00,633 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,652 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 200
+2026-06-15 13:57:00,690 - audit - INFO - REQUEST: DELETE /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,694 - audit - INFO - RESPONSE: DELETE /authors/999 - Status: 404
+2026-06-15 13:57:00,767 - audit - INFO - REQUEST: GET /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,778 - audit - INFO - RESPONSE: GET /books - Status: 200
+2026-06-15 13:57:00,856 - audit - INFO - REQUEST: GET /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,865 - audit - INFO - RESPONSE: GET /books/1 - Status: 200
+2026-06-15 13:57:00,938 - audit - INFO - REQUEST: GET /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:57:00,943 - audit - INFO - RESPONSE: GET /books/999 - Status: 404
+2026-06-15 13:57:01,006 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,010 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:57:01,087 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,112 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:57:01,174 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,195 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:57:01,274 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,280 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:57:01,346 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,350 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:57:01,431 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,452 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:57:01,543 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,563 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:57:01,626 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,631 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:57:01,704 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,722 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 13:57:01,778 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,783 - audit - INFO - RESPONSE: POST /books - Status: 404
+2026-06-15 13:57:01,862 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,866 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:57:01,935 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,941 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:57:01,992 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:01,995 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 13:57:02,043 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,046 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 13:57:02,109 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,113 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 13:57:02,177 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,201 - audit - INFO - RESPONSE: PUT /books/1 - Status: 200
+2026-06-15 13:57:02,238 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,241 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 13:57:02,274 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,279 - audit - INFO - RESPONSE: PUT /books/1 - Status: 404
+2026-06-15 13:57:02,349 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,351 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 13:57:02,423 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,429 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 13:57:02,489 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,494 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 13:57:02,538 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,541 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 13:57:02,621 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,622 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 13:57:02,693 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,713 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 200
+2026-06-15 13:57:02,781 - audit - INFO - REQUEST: DELETE /books/999 - Client: testclient - User: Anonymous
+2026-06-15 13:57:02,787 - audit - INFO - RESPONSE: DELETE /books/999 - Status: 404
+2026-06-15 13:57:03,108 - audit - INFO - REQUEST: GET /user/detail - Client: testclient - User: Anonymous
+2026-06-15 13:57:03,114 - audit - INFO - RESPONSE: GET /user/detail - Status: 200
+2026-06-15 13:57:03,424 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 13:57:03,958 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 200
+2026-06-15 13:57:04,267 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 13:57:04,534 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 401
+2026-06-15 13:57:04,847 - audit - INFO - REQUEST: PUT /user/change_phone - Client: testclient - User: Anonymous
+2026-06-15 13:57:04,870 - audit - INFO - RESPONSE: PUT /user/change_phone - Status: 200
+2026-06-15 14:00:54,116 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 14:00:54,124 - audit - INFO - RESPONSE: GET /admin/books - Status: 200
+2026-06-15 14:00:54,196 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 14:00:54,200 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 14:00:54,285 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 14:00:54,286 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 14:00:54,354 - audit - INFO - REQUEST: DELETE /admin/books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:54,378 - audit - INFO - RESPONSE: DELETE /admin/books/1 - Status: 200
+2026-06-15 14:00:54,429 - audit - INFO - REQUEST: DELETE /admin/books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:00:54,434 - audit - INFO - RESPONSE: DELETE /admin/books/999 - Status: 404
+2026-06-15 14:00:55,443 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:00:55,448 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:00:55,491 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:00:55,495 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:00:55,535 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:00:55,544 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:00:55,591 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:00:55,596 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:00:55,641 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:00:55,645 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:00:55,707 - audit - INFO - REQUEST: GET /authors - Client: testclient - User: Anonymous
+2026-06-15 14:00:55,719 - audit - INFO - RESPONSE: GET /authors - Status: 200
+2026-06-15 14:00:55,781 - audit - INFO - REQUEST: GET /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:55,786 - audit - INFO - RESPONSE: GET /authors/1 - Status: 200
+2026-06-15 14:00:55,840 - audit - INFO - REQUEST: GET /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:00:55,848 - audit - INFO - RESPONSE: GET /authors/999 - Status: 404
+2026-06-15 14:00:55,901 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 14:00:55,922 - audit - INFO - RESPONSE: POST /authors - Status: 201
+2026-06-15 14:00:55,966 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 14:00:55,970 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 14:00:56,010 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,012 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 14:00:56,073 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,076 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 14:00:56,132 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,134 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 14:00:56,198 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,218 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 200
+2026-06-15 14:00:56,260 - audit - INFO - REQUEST: PUT /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,266 - audit - INFO - RESPONSE: PUT /authors/999 - Status: 404
+2026-06-15 14:00:56,333 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,336 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 14:00:56,391 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,393 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 14:00:56,447 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,462 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 200
+2026-06-15 14:00:56,505 - audit - INFO - REQUEST: DELETE /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,510 - audit - INFO - RESPONSE: DELETE /authors/999 - Status: 404
+2026-06-15 14:00:56,606 - audit - INFO - REQUEST: GET /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,616 - audit - INFO - RESPONSE: GET /books - Status: 200
+2026-06-15 14:00:56,812 - audit - INFO - REQUEST: GET /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,819 - audit - INFO - RESPONSE: GET /books/1 - Status: 200
+2026-06-15 14:00:56,889 - audit - INFO - REQUEST: GET /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,894 - audit - INFO - RESPONSE: GET /books/999 - Status: 404
+2026-06-15 14:00:56,976 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:56,981 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:00:57,051 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,073 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:00:57,133 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,150 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:00:57,231 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,234 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:00:57,301 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,305 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:00:57,370 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,387 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:00:57,446 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,464 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:00:57,536 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,539 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:00:57,609 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,632 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:00:57,699 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,705 - audit - INFO - RESPONSE: POST /books - Status: 404
+2026-06-15 14:00:57,778 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,783 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:00:57,849 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,854 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:00:57,895 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,899 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:00:57,932 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:57,935 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:00:58,001 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:00:58,005 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:00:58,068 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:58,091 - audit - INFO - RESPONSE: PUT /books/1 - Status: 200
+2026-06-15 14:00:58,132 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:58,135 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 14:00:58,178 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:58,183 - audit - INFO - RESPONSE: PUT /books/1 - Status: 404
+2026-06-15 14:00:58,262 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:58,264 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 14:00:58,325 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:00:58,329 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 14:00:58,410 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:00:58,417 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 14:00:58,455 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:58,459 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 14:00:58,529 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:58,531 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 14:00:58,608 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:00:58,627 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 200
+2026-06-15 14:00:58,722 - audit - INFO - REQUEST: DELETE /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:00:58,726 - audit - INFO - RESPONSE: DELETE /books/999 - Status: 404
+2026-06-15 14:00:59,046 - audit - INFO - REQUEST: GET /user/detail - Client: testclient - User: Anonymous
+2026-06-15 14:00:59,052 - audit - INFO - RESPONSE: GET /user/detail - Status: 200
+2026-06-15 14:00:59,366 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 14:00:59,906 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 200
+2026-06-15 14:01:00,214 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 14:01:00,482 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 401
+2026-06-15 14:01:00,808 - audit - INFO - REQUEST: PUT /user/change_phone - Client: testclient - User: Anonymous
+2026-06-15 14:01:00,825 - audit - INFO - RESPONSE: PUT /user/change_phone - Status: 200
+2026-06-15 14:07:29,506 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 14:07:29,513 - audit - INFO - RESPONSE: GET /admin/books - Status: 200
+2026-06-15 14:07:29,591 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 14:07:29,594 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 14:07:29,758 - audit - INFO - REQUEST: DELETE /admin/books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:29,760 - audit - INFO - RESPONSE: DELETE /admin/books/1 - Status: 401
+2026-06-15 14:07:29,814 - audit - INFO - REQUEST: DELETE /admin/books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:29,815 - audit - INFO - RESPONSE: DELETE /admin/books/999 - Status: 401
+2026-06-15 14:07:30,833 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:07:30,838 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:07:30,883 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:07:30,886 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:07:30,922 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:07:30,930 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:07:30,967 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:07:30,972 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:07:31,008 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,012 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:07:31,061 - audit - INFO - REQUEST: GET /authors - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,064 - audit - INFO - RESPONSE: GET /authors - Status: 401
+2026-06-15 14:07:31,125 - audit - INFO - REQUEST: GET /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,128 - audit - INFO - RESPONSE: GET /authors/1 - Status: 401
+2026-06-15 14:07:31,200 - audit - INFO - REQUEST: GET /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,202 - audit - INFO - RESPONSE: GET /authors/999 - Status: 401
+2026-06-15 14:07:31,266 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,271 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 14:07:31,317 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,320 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 14:07:31,423 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,427 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 14:07:31,531 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,534 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 14:07:31,586 - audit - INFO - REQUEST: PUT /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,588 - audit - INFO - RESPONSE: PUT /authors/999 - Status: 401
+2026-06-15 14:07:31,638 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,641 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 14:07:31,760 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,761 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 14:07:31,807 - audit - INFO - REQUEST: DELETE /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,808 - audit - INFO - RESPONSE: DELETE /authors/999 - Status: 401
+2026-06-15 14:07:31,881 - audit - INFO - REQUEST: GET /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,883 - audit - INFO - RESPONSE: GET /books - Status: 401
+2026-06-15 14:07:31,951 - audit - INFO - REQUEST: GET /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:31,953 - audit - INFO - RESPONSE: GET /books/1 - Status: 401
+2026-06-15 14:07:32,016 - audit - INFO - REQUEST: GET /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,017 - audit - INFO - RESPONSE: GET /books/999 - Status: 401
+2026-06-15 14:07:32,094 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,096 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,171 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,173 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,245 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,247 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,316 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,318 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,388 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,389 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,456 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,457 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,533 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,534 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,605 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,606 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,675 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,676 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,759 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,760 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,837 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,839 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,905 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,907 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:32,951 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:32,954 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:33,068 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:33,069 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:33,144 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:33,147 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 14:07:33,187 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:33,190 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 14:07:33,240 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:33,246 - audit - INFO - RESPONSE: PUT /books/1 - Status: 404
+2026-06-15 14:07:33,393 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:33,395 - audit - INFO - RESPONSE: PUT /books/999 - Status: 401
+2026-06-15 14:07:33,476 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:33,478 - audit - INFO - RESPONSE: PUT /books/999 - Status: 401
+2026-06-15 14:07:33,525 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:33,528 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 14:07:33,658 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:33,660 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 14:07:33,734 - audit - INFO - REQUEST: DELETE /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:33,736 - audit - INFO - RESPONSE: DELETE /books/999 - Status: 401
+2026-06-15 14:07:34,061 - audit - INFO - REQUEST: GET /user/detail - Client: testclient - User: Anonymous
+2026-06-15 14:07:34,063 - audit - INFO - RESPONSE: GET /user/detail - Status: 401
+2026-06-15 14:07:34,391 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 14:07:34,393 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 401
+2026-06-15 14:07:34,708 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 14:07:34,710 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 401
+2026-06-15 14:07:35,019 - audit - INFO - REQUEST: PUT /user/change_phone - Client: testclient - User: Anonymous
+2026-06-15 14:07:35,021 - audit - INFO - RESPONSE: PUT /user/change_phone - Status: 401
+2026-06-15 14:07:44,923 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 14:07:44,931 - audit - INFO - RESPONSE: GET /admin/books - Status: 200
+2026-06-15 14:07:44,998 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 14:07:45,001 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 14:07:45,082 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 14:07:45,083 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 14:07:45,141 - audit - INFO - REQUEST: DELETE /admin/books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:45,160 - audit - INFO - RESPONSE: DELETE /admin/books/1 - Status: 200
+2026-06-15 14:07:45,194 - audit - INFO - REQUEST: DELETE /admin/books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:45,198 - audit - INFO - RESPONSE: DELETE /admin/books/999 - Status: 404
+2026-06-15 14:07:46,186 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,191 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:07:46,231 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,234 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:07:46,266 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,274 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:07:46,309 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,312 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:07:46,347 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,351 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:07:46,399 - audit - INFO - REQUEST: GET /authors - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,408 - audit - INFO - RESPONSE: GET /authors - Status: 200
+2026-06-15 14:07:46,467 - audit - INFO - REQUEST: GET /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,474 - audit - INFO - RESPONSE: GET /authors/1 - Status: 200
+2026-06-15 14:07:46,523 - audit - INFO - REQUEST: GET /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,529 - audit - INFO - RESPONSE: GET /authors/999 - Status: 404
+2026-06-15 14:07:46,586 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,603 - audit - INFO - RESPONSE: POST /authors - Status: 201
+2026-06-15 14:07:46,640 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,643 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 14:07:46,691 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,694 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 14:07:46,753 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,757 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 14:07:46,807 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,808 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 14:07:46,857 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,875 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 200
+2026-06-15 14:07:46,908 - audit - INFO - REQUEST: PUT /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,912 - audit - INFO - RESPONSE: PUT /authors/999 - Status: 404
+2026-06-15 14:07:46,958 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:46,961 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 14:07:47,018 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,019 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 14:07:47,078 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,093 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 200
+2026-06-15 14:07:47,137 - audit - INFO - REQUEST: DELETE /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,142 - audit - INFO - RESPONSE: DELETE /authors/999 - Status: 404
+2026-06-15 14:07:47,215 - audit - INFO - REQUEST: GET /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,225 - audit - INFO - RESPONSE: GET /books - Status: 200
+2026-06-15 14:07:47,287 - audit - INFO - REQUEST: GET /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,294 - audit - INFO - RESPONSE: GET /books/1 - Status: 200
+2026-06-15 14:07:47,359 - audit - INFO - REQUEST: GET /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,363 - audit - INFO - RESPONSE: GET /books/999 - Status: 404
+2026-06-15 14:07:47,434 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,439 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:07:47,506 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,525 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:07:47,596 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,628 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:07:47,694 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,698 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:07:47,767 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,773 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:07:47,868 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,887 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:07:47,962 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:47,984 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:07:48,059 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,064 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:07:48,136 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,157 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:07:48,227 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,233 - audit - INFO - RESPONSE: POST /books - Status: 404
+2026-06-15 14:07:48,308 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,311 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:07:48,408 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,413 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:07:48,452 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,456 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:48,490 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,492 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:07:48,552 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,557 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:07:48,619 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,643 - audit - INFO - RESPONSE: PUT /books/1 - Status: 200
+2026-06-15 14:07:48,684 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,687 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 14:07:48,722 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,726 - audit - INFO - RESPONSE: PUT /books/1 - Status: 404
+2026-06-15 14:07:48,793 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,794 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 14:07:48,851 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,856 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 14:07:48,918 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,923 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 14:07:48,958 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:48,961 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 14:07:49,026 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:49,027 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 14:07:49,105 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:07:49,120 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 200
+2026-06-15 14:07:49,187 - audit - INFO - REQUEST: DELETE /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:07:49,192 - audit - INFO - RESPONSE: DELETE /books/999 - Status: 404
+2026-06-15 14:07:49,502 - audit - INFO - REQUEST: GET /user/detail - Client: testclient - User: Anonymous
+2026-06-15 14:07:49,509 - audit - INFO - RESPONSE: GET /user/detail - Status: 200
+2026-06-15 14:07:49,833 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 14:07:50,365 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 200
+2026-06-15 14:07:50,681 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 14:07:50,944 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 401
+2026-06-15 14:07:51,258 - audit - INFO - REQUEST: PUT /user/change_phone - Client: testclient - User: Anonymous
+2026-06-15 14:07:51,289 - audit - INFO - RESPONSE: PUT /user/change_phone - Status: 200
+2026-06-15 14:08:33,033 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 14:08:33,041 - audit - INFO - RESPONSE: GET /admin/books - Status: 200
+2026-06-15 14:08:33,114 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 14:08:33,117 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 14:08:33,198 - audit - INFO - REQUEST: GET /admin/books - Client: testclient - User: Anonymous
+2026-06-15 14:08:33,199 - audit - INFO - RESPONSE: GET /admin/books - Status: 401
+2026-06-15 14:08:33,261 - audit - INFO - REQUEST: DELETE /admin/books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:33,277 - audit - INFO - RESPONSE: DELETE /admin/books/1 - Status: 200
+2026-06-15 14:08:33,320 - audit - INFO - REQUEST: DELETE /admin/books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:08:33,323 - audit - INFO - RESPONSE: DELETE /admin/books/999 - Status: 404
+2026-06-15 14:08:34,312 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,317 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:08:34,357 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,360 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:08:34,399 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,406 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:08:34,444 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,447 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:08:34,498 - audit - INFO - REQUEST: POST /auth - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,500 - audit - INFO - RESPONSE: POST /auth - Status: 422
+2026-06-15 14:08:34,563 - audit - INFO - REQUEST: GET /authors - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,576 - audit - INFO - RESPONSE: GET /authors - Status: 200
+2026-06-15 14:08:34,640 - audit - INFO - REQUEST: GET /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,648 - audit - INFO - RESPONSE: GET /authors/1 - Status: 200
+2026-06-15 14:08:34,701 - audit - INFO - REQUEST: GET /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,707 - audit - INFO - RESPONSE: GET /authors/999 - Status: 404
+2026-06-15 14:08:34,763 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,784 - audit - INFO - RESPONSE: POST /authors - Status: 201
+2026-06-15 14:08:34,838 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,842 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 14:08:34,886 - audit - INFO - REQUEST: POST /authors - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,888 - audit - INFO - RESPONSE: POST /authors - Status: 401
+2026-06-15 14:08:34,952 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:34,957 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 14:08:35,018 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,021 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 401
+2026-06-15 14:08:35,073 - audit - INFO - REQUEST: PUT /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,094 - audit - INFO - RESPONSE: PUT /authors/1 - Status: 200
+2026-06-15 14:08:35,143 - audit - INFO - REQUEST: PUT /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,151 - audit - INFO - RESPONSE: PUT /authors/999 - Status: 404
+2026-06-15 14:08:35,213 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,217 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 14:08:35,268 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,270 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 401
+2026-06-15 14:08:35,351 - audit - INFO - REQUEST: DELETE /authors/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,371 - audit - INFO - RESPONSE: DELETE /authors/1 - Status: 200
+2026-06-15 14:08:35,432 - audit - INFO - REQUEST: DELETE /authors/999 - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,438 - audit - INFO - RESPONSE: DELETE /authors/999 - Status: 404
+2026-06-15 14:08:35,517 - audit - INFO - REQUEST: GET /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,526 - audit - INFO - RESPONSE: GET /books - Status: 200
+2026-06-15 14:08:35,599 - audit - INFO - REQUEST: GET /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,606 - audit - INFO - RESPONSE: GET /books/1 - Status: 200
+2026-06-15 14:08:35,677 - audit - INFO - REQUEST: GET /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,682 - audit - INFO - RESPONSE: GET /books/999 - Status: 404
+2026-06-15 14:08:35,750 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,758 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:08:35,830 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,849 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:08:35,924 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:35,957 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:08:36,030 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,035 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:08:36,112 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,116 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:08:36,183 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,207 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:08:36,296 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,313 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:08:36,379 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,384 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:08:36,446 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,469 - audit - INFO - RESPONSE: POST /books - Status: 201
+2026-06-15 14:08:36,539 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,546 - audit - INFO - RESPONSE: POST /books - Status: 404
+2026-06-15 14:08:36,617 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,621 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:08:36,702 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,708 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:08:36,746 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,751 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:08:36,798 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,801 - audit - INFO - RESPONSE: POST /books - Status: 401
+2026-06-15 14:08:36,870 - audit - INFO - REQUEST: POST /books - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,875 - audit - INFO - RESPONSE: POST /books - Status: 422
+2026-06-15 14:08:36,949 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:36,969 - audit - INFO - RESPONSE: PUT /books/1 - Status: 200
+2026-06-15 14:08:37,014 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:37,017 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 14:08:37,070 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:37,076 - audit - INFO - RESPONSE: PUT /books/1 - Status: 404
+2026-06-15 14:08:37,145 - audit - INFO - REQUEST: PUT /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:37,147 - audit - INFO - RESPONSE: PUT /books/1 - Status: 401
+2026-06-15 14:08:37,262 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:08:37,266 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 14:08:37,344 - audit - INFO - REQUEST: PUT /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:08:37,351 - audit - INFO - RESPONSE: PUT /books/999 - Status: 404
+2026-06-15 14:08:37,391 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:37,395 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 14:08:37,472 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:37,474 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 401
+2026-06-15 14:08:37,535 - audit - INFO - REQUEST: DELETE /books/1 - Client: testclient - User: Anonymous
+2026-06-15 14:08:37,559 - audit - INFO - RESPONSE: DELETE /books/1 - Status: 200
+2026-06-15 14:08:37,648 - audit - INFO - REQUEST: DELETE /books/999 - Client: testclient - User: Anonymous
+2026-06-15 14:08:37,652 - audit - INFO - RESPONSE: DELETE /books/999 - Status: 404
+2026-06-15 14:08:37,963 - audit - INFO - REQUEST: GET /user/detail - Client: testclient - User: Anonymous
+2026-06-15 14:08:37,969 - audit - INFO - RESPONSE: GET /user/detail - Status: 200
+2026-06-15 14:08:38,287 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 14:08:38,819 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 200
+2026-06-15 14:08:39,122 - audit - INFO - REQUEST: PUT /user/change_password - Client: testclient - User: Anonymous
+2026-06-15 14:08:39,382 - audit - INFO - RESPONSE: PUT /user/change_password - Status: 401
+2026-06-15 14:08:39,706 - audit - INFO - REQUEST: PUT /user/change_phone - Client: testclient - User: Anonymous
+2026-06-15 14:08:39,724 - audit - INFO - RESPONSE: PUT /user/change_phone - Status: 200

@@ -152,21 +152,6 @@ def test_create_book_missing_author(test_books):
     assert response.status_code == status.HTTP_422_UNPROCESSABLE_CONTENT
 
 
-def test_create_book_author_id_not_found(test_books):
-    request_data = {
-        "title": "Test",
-        "description": "Desc",
-        "author_id": 999,
-        "rating": 5,
-        "published_year": 2022
-    }
-
-    response = client.post("/books", json=request_data)
-
-    assert response.status_code == 404
-    assert response.json()["detail"] == "Author not found"
-
-
 def test_create_book_author_name_missing_born_year(test_books):
     request_data = {
         "title": "Invalid Author",

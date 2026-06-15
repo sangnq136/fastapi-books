@@ -9,8 +9,7 @@ from repositories.auth_repository import *
 
 bcrypt_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-
-# ✅ Authenticate user
+# ? Authenticate user
 def authenticate_user(db, username: str, password: str):
     user = get_user_by_username(db, username)
 
@@ -22,19 +21,20 @@ def authenticate_user(db, username: str, password: str):
 
     return user
 
-
-# ✅ Create JWT token
-def create_access_token(username: str, user_id: int, role: str, expires_delta: timedelta):
+# ? Create JWT token
+def create_access_token(username: str, user_id: int, role: str, expires_delta: timedelta = None):
+    if expires_delta is None:
+        expires_delta = timedelta(minutes=settings.TOKEN_EXPIRE_MINUTES)
+    
     to_encode = {
         "sub": username,
         "id": user_id,
         "role": role,
-        "exp": datetime.now() + expires_delta
+        "exp": datetime.utcnow() + expires_delta
     }
     return jwt.encode(to_encode, settings.SECRET_KEY, algorithm=settings.ALGORITHM)
 
-
-# ✅ Get current user
+# ? Get current user
 def get_current_user_service(token: str):
     try:
         payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
@@ -55,8 +55,7 @@ def get_current_user_service(token: str):
     except JWTError:
         raise HTTPException(status_code=401, detail="Could not validate user")
 
-
-# ✅ Create user
+# ? Create user
 def create_user_service(db, request):
     try:
         if get_user_by_username(db, request.username) or get_user_by_email(db, request.email):

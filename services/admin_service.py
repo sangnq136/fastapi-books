@@ -1,21 +1,19 @@
-from fastapi import HTTPException, status
+﻿from fastapi import HTTPException, status
+from core.constants import ROLE_ADMIN
 from repositories.admin_repository import *
-
 
 # ✅ check admin role
 def _check_admin(user):
-    if not user or user.get("user_role") != "admin":
+    if not user or user.get("user_role") != ROLE_ADMIN:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Access Denied"
         )
 
-
 # ✅ get all books (admin)
 def admin_get_all_books_service(db, user):
     _check_admin(user)
     return get_all_books(db)
-
 
 # ✅ delete book (admin)
 def admin_delete_book_service(db, user, book_id: int):
